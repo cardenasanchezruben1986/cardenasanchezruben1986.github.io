@@ -1,0 +1,28 @@
+h1 { text-align: center; }
+p { text-align: justify; }
+#hTitulo { color: lime; background-color: black; }
+
+.vt323 {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+#gradColores_1 { background-image: linear-gradient(to right, red, 
+    orange, yellow, green, blue, indigo, violet); }
+
+#gradColores_2 { background-image: radial-gradient(red, 
+    orange, yellow, green, blue, indigo, violet); }
+
+.button {
+  color: white;
+  background-color: #04AA6D;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  padding: 15px 32px;
+  display: inline-block;
+  cursor: pointer;
+}
