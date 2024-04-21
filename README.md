@@ -15,5 +15,7 @@ Liga de acceso: https://cardenasanchezruben1986.github.io/
    → Actividad No. 3 { Formularios }
    → Actividad No. 4 { Estilos }
  → Unidad 3
+   → Actividad No. 1 { Examen práctico de la Unidad 2 }
+   → Actividad No. 2 { Estilos: Efectos, Animación, Transición, ... }
 
 %%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%% %%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%
