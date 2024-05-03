@@ -1,7 +1,7 @@
 ## Portafolio - Programación Web I
 :construction: Proyecto en construcción :construction:
 
-> Liga de acceso al [Portafolio] (https://cardenasanchezruben1986.github.io/)
+> Liga de acceso: https://cardenasanchezruben1986.github.io/
 
  - `Unidad 1`
    - `Actividad No. 1` * Estructura básica HTML5 *
@@ -21,5 +21,5 @@
    - `Actividad No. 3` * Introducción a JavaScript *
    - `Actividad No. 4` * JavaScript con Formularios *
 
-[!NOTE]
-Basic writing and formatting syntax [GitHub Doc] (https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+> [!NOTE]
+> Basic writing and formatting syntax [GitHub Doc](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
