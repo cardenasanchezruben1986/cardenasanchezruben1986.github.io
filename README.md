@@ -20,7 +20,18 @@
    - `Actividad No. 9.1` *Química orgánica* **[ Link ]**
    - `Actividad No. 10` *Mapa* **[ Link ]**
  - **`Unidad 2`**
-   - `Actividad No. ?` *...* **[ Link ]**
+   - `Actividad No. 1` *Tablas* **[ Link ]**
+   - `Actividad No. 2` *Tablas combinadas* **[ Link ]**
+   - `Actividad No. 2.1` *Tablas combinadas* **[ Link ]**
+   - `Actividad No. 3` *Estilos* **[ Link ]**
+   - `Actividad No. 4` *Estilos* **[ Link ]**
+   - `Actividad No. 4.1` *Colores* **[ Link ]**
+   - `Actividad No. 4.2` *Lista c/Tablas* **[ Link ]**
+   - `Actividad No. 5` *Menú* **[ Link ]**
+   - `Actividad No. 6` *Bootstrap* **[ Link ]**
+   - `Actividad No. 7` *Submenú* **[ Link ]**
+   - `Actividad No. 7.1` *Mapa de sitio* **[ Link ]**
+   - `Actividad No. 8` *Efectos* **[ Link ]**
  - **`Unidad 3`**
    - `Actividad No. ?` *...* **[ Link ]**
  - **`Proyecto`**
