@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Astro v5.13.2" />
+    <title>Doom</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/"/>
+    <script src="../assets/js/color-modes.js"></script>
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <meta name="theme-color" content="#712cf9" />
+    <link href="carousel.css" rel="stylesheet" />
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: #0000001a;
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow:
+          inset 0 0.5em 1.5em #0000001a,
+          inset 0 0.125em 0.5em #00000026;
+      }
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+      .bd-mode-toggle .bi {
+        width: 1em;
+        height: 1em;
+      }
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+  </head>
+  <body>
+    <header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Doom</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1"
+            class="active" aria-current="true"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item div-background active" style="background-image: url(imagenes/galeria_0.jpg);">
+            <div class="container">
+              <div class="carousel-caption div-text text-start">
+                <h1>Doom <em>(franquicia)</em></h1>
+                <p class="opacity-75">
+                  La franquicia Doom es una serie de videojuegos de disparos en primera persona creada por John Carmack, John Romero, Adrian Carmack, Kevin Cloud y Tom Hall, y desarrollada por id Software.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item div-background" style="background-image: url(imagenes/galeria_1.jpg);">
+            <div class="container">
+              <div class="carousel-caption div-text">
+                <h1>Doom <em>(2016)</em></h1>
+                <p>
+                  Es el cuarto título de la serie principal y la primera gran entrega desde Doom 3 en 2004. Se lanzó en todo el mundo en Windows, PlayStation 4 y Xbox One el 13 de mayo de 2016 y funciona con la tecnología de id Tech 6.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item div-background" style="background-image: url(imagenes/galeria_2.jpg);">
+            <div class="container">
+              <div class="carousel-caption div-text text-end">
+                <h1>Doom Eternal <em>(2020)</em></h1>
+                <p>
+                  Es el quinto título principal de la serie Doom y la secuela directa de Doom (2016). El juego fue lanzado el 20 de marzo de 2020 para las plataformas PlayStation 4, Xbox One, Microsoft Windows, Google Stadia y Nintendo Switch, y el 29 de junio del 2021 en plataformas como PlayStation 5 y Xbox Series X/S.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item div-background" style="background-image: url(imagenes/galeria_3.jpg);">
+            <div class="container">
+              <div class="carousel-caption div-text text-start">
+                <h1>Doom Eternal <em>The Ancient Gods</em></h1>
+                <p class="opacity-75">
+                  The Ancient Gods es un DLC de campaña independiente de dos partes ambientado después de los eventos del juego principal, se lanzó entre octubre de 2020 y marzo de 2021.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item div-background" style="background-image: url(imagenes/galeria_4.jpg);">
+            <div class="container">
+              <div class="carousel-caption div-text">
+                <h1>Doom The Dark Ages <em>(2016)</em></h1>
+                <p>
+                  Es la octava entrega principal de la franquicia Doom, después de Doom Eternal (2020). Narrativamente sirve como una precuela de Doom (2016), en el reino tecno-medieval de Argent D'Nur y representa la historia del origen del Doom Slayer mientras lucha junto a los Centinelas de la Noche en una guerra contra las fuerzas del infierno.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Marketing messaging and featurettes
+  ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+      <div class="container marketing">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img width="150px" src="imagenes/Doom_Logo.png">
+            <h2 class="fw-normal">Doom</h2>
+            <p style="font-size: small; text-align: justify;">
+              En un momento indeterminado, Pierce abre el portal para los demonios, quienes invaden las instalaciones y matan a casi todo su personal. Para repelerlos, Hayden despierta a Slayer, quien recupera su armadura e inicialmente ignora las súplicas de Hayden. Al negarle información a menos que acepte ayudar a Hayden, Slayer accede y comienza a ser guiada por VEGA. Después de limpiar el núcleo de la instalación y evitar una fusión en su fundición, Slayer persigue a Pierce hasta la torre, destruyendo en el camino infraestructura crítica para el refinamiento de la energía Argent a pesar de las protestas de Hayden. En la cima de la torre, Pierce abre una grieta explosiva hacia el infierno usando un dispositivo llamado acumulador Argent, destruyendo la Torre y enviando a Slayer de regreso al infierno.
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img width="150px" src="imagenes/Eternal_Logo.png">
+            <h2 class="fw-normal">Doom Eternal</h2>
+            <p style="font-size: small; text-align: justify;">
+              En el año 2163, 14 años después de los eventos en Marte, la Tierra ha sido invadida por fuerzas demoníacas, acabando con el 60% de la población del planeta, bajo la ahora corrupta Union Aerospace Corporation (UAC) que jura lealtad hacia los demonios con motivos expansionistas. Lo que queda de la humanidad huyó de la Tierra y otros se unieron a la Armored Response Coalition (ARC). Previamente, Doom Slayer había sido traicionado y teletransportado por el Dr. Samuel Hayden a otra parte del universo. Sin embargo, regresa con una fortaleza satelital controlada por la inteligencia artificial conocida como VEGA. Este le indica que para sofocar la invasión demoníaca debe matar a los 3 Sacerdotes Infernales: Deags Nilox, Ranak y Grav; ellos se hallan ocultos bajo la protección y órdenes de un ser angelical conocido como Khan Maykr que busca sacrificar a la humanidad por la supervivencia de su propia raza.
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img width="150px" src="imagenes/DarkAges_Logo.png">
+            <h2 class="fw-normal">Doom The Dark Ages</h2>
+            <p style="font-size: small; text-align: justify;">
+              Mucho antes de las invasiones del Infierno tanto a Marte como a la Tierra, los Centinelas Nocturnos de Argent D'Nur y sus aliados, los Maykrs, se encuentran inmersos en una feroz guerra contra las fuerzas del Infierno, que buscan el Corazón de Argent. El Doom Slayer, potenciado por los Maykrs, es desplegado para ayudar a cambiar el rumbo de la batalla a favor de la humanidad. Sin embargo, el Slayer no lucha completamente por voluntad propia, ya que su amo, Kreed Maykr, suprime su mente con un dispositivo llamado el Lazo. Mientras tanto, el líder de las fuerzas del Infierno, el Príncipe Ahzrak, se da cuenta de que no vale la pena enfrentarse directamente al Slayer y concentra sus esfuerzos en encontrar el Corazón.
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+        <!-- START THE FEATURETTES -->
+        <hr class="featurette-divider" />
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">
+              <i class="fa fa-gamepad" aria-hidden="true"></i>
+              &nbsp;Doom
+              <span class="text-body-secondary">[ Wikipedia ]</span>
+            </h2>
+            <p class="lead">
+              Informaci&oacute;n general sobre Doom en el sitio web Wikipedia.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <iframe title="Wikipedia" src="https://es.wikipedia.org/wiki/Doom_(videojuego_de_2016)" width="450px" height="450px"></iframe>
+          </div>
+        </div>
+        <hr class="featurette-divider" />
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+              &nbsp;Doom Eternal nVidia DLSS &amp; RTX
+              <span class="text-body-secondary">[ Facebook ]</span>
+            </h2>
+            <p class="lead">
+              Perfil de nVidia en el sitio web Facebook.
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <iframe title="Facebook" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FNVIDIAGeForce.LA%2Fvideos%2F165526005612588%2F&show_text=false&width=560&t=0" width="430" height="240" style="border:none;overflow:hidden" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+        </div>
+        <hr class="featurette-divider" />
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              &nbsp;Doom The Dark Ages
+              <span class="text-body-secondary">[ Twitter ]</span>
+            </h2>
+            <p class="lead">
+              Perfil de Doom en el sitio web Twitter.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">we are back <a href="https://t.co/Oyl7F8rTXP">pic.twitter.com/Oyl7F8rTXP</a></p>&mdash; DOOM (@DOOM) <a href="https://twitter.com/DOOM/status/1799883413580607982?ref_src=twsrc%5Etfw">June 9, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+        <hr class="featurette-divider" />
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              &nbsp;Doom The Dark Ages
+              <span class="text-body-secondary">[ Instagram ]</span>
+            </h2>
+            <p class="lead">
+              Perfil de Bethesda en el sitio web Instagram.
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DLDnLNZOrTi/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/DLDnLNZOrTi/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver esta publicación en Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/DLDnLNZOrTi/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Una publicación compartida de Bethesda LATAM (@bethesdalatam)</a></p></div></blockquote>
+            <script async src="//www.instagram.com/embed.js"></script>
+          </div>
+        </div>
+        <hr class="featurette-divider" />
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">
+              <i class="fa fa-video-camera" aria-hidden="true"></i>
+              &nbsp;Doom The Dark Ages
+              <span class="text-body-secondary">[ TikTok ]</span>
+            </h2>
+            <p class="lead">
+              Perfil de Bethesda en el sitio web TikTok.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bethesda/video/7504714936317119766" data-video-id="7504714936317119766" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@bethesda" href="https://www.tiktok.com/@bethesda?refer=embed">@bethesda</a> Step into the blood-stained boots of the DOOM Slayer... DOOM: The Dark Ages is available now! <a title="doom" target="_blank" href="https://www.tiktok.com/tag/doom?refer=embed">#DOOM</a> <a title="doomthedarkages" target="_blank" href="https://www.tiktok.com/tag/doomthedarkages?refer=embed">#doomthedarkages</a> <a target="_blank" title="♬ original sound - Bethesda" href="https://www.tiktok.com/music/original-sound-7504714918885886722?refer=embed">♬ original sound - Bethesda</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
+        </div>
+        <hr class="featurette-divider" />
+        <!-- /END THE FEATURETTES -->
+      </div>
+      <!-- /.container -->
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>
+          &copy; 2017–2025 Company, Inc. &middot;
+          <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+        </p>
+      </footer>
+    </main>
+    <script
+      src="../assets/dist/js/bootstrap.bundle.min.js"
+      class="astro-vvvwv3sm"
+    ></script>
+  </body>
+</html>
