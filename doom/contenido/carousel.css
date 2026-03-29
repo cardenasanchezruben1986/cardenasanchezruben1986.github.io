@@ -86,7 +86,7 @@ body {
  */
 
 .carousel-item { 
-  height: 100vh;
+  height: 80vh;
   min-height: 400px;
 }
 
