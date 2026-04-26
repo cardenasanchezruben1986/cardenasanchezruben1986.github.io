@@ -24,16 +24,9 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 80vh;
-  min-height: 500px;
+  height: 45rem;
 }
 
-.carousel-item img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: top;
-}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -91,6 +84,12 @@ body {
 /*
  * Personal Style
  */
+
+.div-background {
+  background-size: 100%;
+  background-position: top center;
+  background-repeat: repeat-y;
+}
 
 .div-text {
   padding: 10px;
