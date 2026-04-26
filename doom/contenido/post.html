@@ -5,23 +5,63 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <!-- 1er cambio: Agregar título a la página -->
-        <title>Blog Post - Start Bootstrap Template</title>
-        <!-- 2do cambio: Agregar el íucono de la pestaña (Favicon) -->
+        <title>Doom</title>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <!-- 3er cambio: Pegar el contenido de la etiqueta nav (Menú principal) -->
-            <div class="container">
-                <a class="navbar-brand" href="#!">Start Bootstrap</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="favicon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="introduccion.html">Introducci&oacute;n</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Videojuegos
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="serieClasica.html">Serie cl&aacute;sica</a></li>
+                        <li><a class="dropdown-item" href="doom3.html">Doom 3</a></li>
+                        <li><a class="dropdown-item" href="nuevaSerie.html">Nueva serie</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="motorGrafico.html">Motor gr&aacute;fico</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        T&iacute;tulos relacionados
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="quake.html">Quake</a></li>
+                        <li><a class="dropdown-item" href="commanderKeen.html">Commander Keen</a></li>
+                        <li><a class="dropdown-item" href="wolfenstein.html">Wolfenstein</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pel&iacute;culas
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="movieDoom_I.html">Doom (2005)</a></li>
+                        <li><a class="dropdown-item" href="movieDoom_II.html">Doom: Annihilation (2019)</a></li>
+                        </ul>
+                    </li>
                     </ul>
                 </div>
             </div>
@@ -95,9 +135,13 @@
                 </div>
             </div>
         </div>
-        <!-- 4to cambio: Personalizar el pie de página-->
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+            <div class="container">
+                <p class="m-0 text-center text-white">
+                    &copy; 2026 Bethesda &middot; <small>Doom</small> &middot; <small>Doom Eternal</small> &middot; <small>Doom The Dark Ages</small>
+                    &emsp; &emsp; <a href="#">Back to top</a>
+                </p>
+            </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="js/scripts.js"></script>
